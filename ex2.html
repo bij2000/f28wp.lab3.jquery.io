@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lab3-Ex2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $("#hi").text('Welcome')
+
+      $("#div1").css("background-color", "yellow")
+      $("#div2").css("background-color", "yellow")
+
+      $("#b1show").click(function () {
+        $("#div1").show()
+      })
+
+      $("#b1hide").click(function () {
+        $("#div1").hide()
+      })
+
+      $("#b2show").click(function () {
+        $("#div2").show()
+      })
+
+      $("#b2hide").click(function () {
+        $("#div2").hide()
+      })
+
+      $("#tog").click(function () {
+        $("#div1").toggle()
+        $("#div2").toggle()
+      })
+
+      $("#namebut").click(function () {
+        $("#name").text("Binil Issac Johnson")
+      })
+    })
+
+  </script>
+
+
+</head>
+
+<body>
+  <div id="hi"></div>
+  <br></br>
+
+  <div id="div1">Message 1</div>
+  <button id="b1show">Show</button>
+  <button id="b1hide">Hide</button>
+  <br></br>
+
+  <div id="div2">Message 2</div>
+  <button id="b2show">Show</button>
+  <button id="b2hide">Hide</button>
+  <br></br>
+
+  <button id="tog">Hide and Show Both</button>
+  <br></br>
+
+  <div id="name"></div>
+  <button id="namebut">Show Name</button>
+
+
+
+
+</body>
+
+</html>
